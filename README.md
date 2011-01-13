@@ -27,7 +27,7 @@ If you are interested in manually fiddling with the application (not much to see
 
     node ./application/foo-twitter-client.js
 
-which uses port 8002 by default (may be overriden by using port=<port> argument). Scripts
+which uses port 8002 by default (may be overriden by using port={port} argument). Scripts
 
     ./start-application.sh
     ./stop-application.sh
