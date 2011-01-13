@@ -1,4 +1,5 @@
 describe('twitter client', function() {
+  var jasmine = require('jasmine-node')
   var zombie = require('zombie')
   var browser = new zombie.Browser()
 
@@ -6,14 +7,14 @@ describe('twitter client', function() {
     it('has correct title', function() {
       whenPageHasLoaded(function() {
         expect(browser.text('title')).toEqual('Foo Twitter Client')
-        asyncSpecDone()
+        jasmine.asyncSpecDone()
       })
     })
 
     it('has trends link', function() {
       whenPageHasLoaded(function() {
         expect(browser.text('.actions .showTrends')).toEqual('Trends')
-        asyncSpecDone()
+        jasmine.asyncSpecDone()
       })
     })
   })
@@ -25,7 +26,7 @@ describe('twitter client', function() {
           expect(browser.querySelectorAll('.trends .trend').length).toEqual(10)
           browser.clickLink('.showTrends', function(error, browser) {
             expect(browser.querySelectorAll('.trends .trend').length).toEqual(0)
-            asyncSpecDone()
+            jasmine.asyncSpecDone()
           })
         })
       })
@@ -36,6 +37,6 @@ describe('twitter client', function() {
     browser.visit('http://localhost:8003/', function(error, browser) {
       callback.call()
     })
-    asyncSpecWait()
+    jasmine.asyncSpecWait()
   }
 })
