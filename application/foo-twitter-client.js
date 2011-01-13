@@ -1,24 +1,5 @@
 var express = require('express')
-
-var options = (function() {
-  var _options = {
-    port: '8002'
-  }
-
-  function resolveArgument(name, arg) {
-    var fullPrefix = name + '='
-    if (arg.substring(0, fullPrefix.length) === fullPrefix) {
-      _options[name] = arg.substring(fullPrefix.length)
-    }
-  }
-
-  process.argv.forEach(function(arg) {
-    resolveArgument('port', arg)
-  })
-
-  return _options
-}())
-
+var options = require(__dirname + '/support/arguments-helper').argumentsHelper.toOptions({port: 8002}, process.argv)
 var app = express.createServer()
 
 app.set('view engine', 'jade')
