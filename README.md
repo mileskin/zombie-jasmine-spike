@@ -1,4 +1,4 @@
-Spike project for trying out Zombie.js with Jasmine
+Spike project for trying out [Zombie.js](http://zombie.labnotes.org/) with [Jasmine](http://pivotal.github.com/jasmine/)
 ===================================================
 
 Finally I had a chance to try out this excellent stack!
@@ -7,7 +7,7 @@ Finally I had a chance to try out this excellent stack!
 
 First of all, you will need [node](http://nodejs.org/) and [npm](https://github.com/isaacs/npm).
 
-You will need a couple of `node.js` modules too:
+You will need a couple of node.js modules too:
 
     npm install zombie@0.8.6 # currently fails with newer versions
     npm install html5
@@ -23,7 +23,7 @@ To run the specs (every 3 seconds)
 
 ## TODO
 
-* Unit tests for unhappy paths and corner cases using jasmine-node and [jasmine-fake-ajax](https://github.com/mileskin/jasmine-fake-ajax)
+* Unit tests for unhappy paths and corner cases using [jasmine-node](https://github.com/mhevery/jasmine-node) and [jasmine-fake-ajax](https://github.com/mileskin/jasmine-fake-ajax)
 * Some more application features
 * css using [Less.js](http://fadeyev.net/2010/06/19/lessjs-will-obsolete-css/)
 
