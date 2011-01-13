@@ -23,9 +23,9 @@ To run the specs (every 3 seconds)
 
 ## TODO
 
-* Unit tests for unhappy paths and corner cases using jasmine-node and https://github.com/mileskin/jasmine-fake-ajax
+* Unit tests for unhappy paths and corner cases using jasmine-node and [jasmine-fake-ajax](https://github.com/mileskin/jasmine-fake-ajax)
 * Some more application features
-* css using LESS (http://fadeyev.net/2010/06/19/lessjs-will-obsolete-css/)
+* css using [Less.js](http://fadeyev.net/2010/06/19/lessjs-will-obsolete-css/)
 
-Hope you enjoy, don't forget to follow [me](http://twitter.com/mileskin) on twitter!
+Hope you enjoy, don't forget to [follow me on twitter](http://twitter.com/mileskin)!
 
