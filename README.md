@@ -1,13 +1,26 @@
 Spike project for trying out Zombie.js with Jasmine
 ===================================================
 
-You will need a couple of node.js modules:
+Finally I had a chance to try out this excellent stack!
+
+## Setup
+
+First of all, you will need `node` (http://nodejs.org/) and `npm` (https://github.com/isaacs/npm)
+
+You will need a couple of node.js modules too:
 
     npm install zombie
     npm install jasmine-node
     npm install express
 
+## Specs
+
 To run the specs (every 3 seconds)
 
     watch -n 3 ./run-specs.sh
 
+## TODO
+
+* Unit tests for unhappy paths and corner cases using jasmine-node and https://github.com/mileskin/jasmine-fake-ajax
+* Some more application features
+* css using LESS (http://fadeyev.net/2010/06/19/lessjs-will-obsolete-css/)
