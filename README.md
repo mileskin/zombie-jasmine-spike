@@ -21,6 +21,19 @@ To run the specs (every 3 seconds)
 
     watch -n 3 ./run-specs.sh
 
+## Launching the application
+
+If you are interested in manually fiddling with the application (not much to see though), you may start the server by calling
+
+    node ./application/foo-twitter-client.js
+
+which uses port 8002 by default (may be overriden by using port=<port> argument). Scripts
+
+    ./start-application.sh
+    ./stop-application.sh
+
+are using port 8003 and are ment to be used by the specs only. This enables keeping the application running in isolation from the specs.
+
 ## TODO
 
 * Unit tests for unhappy paths and corner cases using [jasmine-node](https://github.com/mhevery/jasmine-node) and [jasmine-fake-ajax](https://github.com/mileskin/jasmine-fake-ajax)
