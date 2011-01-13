@@ -5,13 +5,15 @@ Finally I had a chance to try out this excellent stack!
 
 ## Setup
 
-First of all, you will need `node` (http://nodejs.org/) and `npm` (https://github.com/isaacs/npm)
+First of all, you will need `node` http://nodejs.org/ and `npm` https://github.com/isaacs/npm
 
 You will need a couple of node.js modules too:
 
-    npm install zombie
+    npm install zombie@0.8.6 # currently fails with newer versions
+    npm install html5
     npm install jasmine-node
     npm install express
+    npm install jade
 
 ## Specs
 
