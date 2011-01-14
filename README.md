@@ -26,9 +26,10 @@ To run the specs (every 3 seconds)
 
 If you are interested in manually fiddling with the application (not much to see though), you may start the server by calling
 
-    node ./application/foo-twitter-client.js
+    cd ./application
+    node ./foo-twitter-client.js
 
-which uses port 8002 by default (may be overriden by using port={port} argument). Scripts
+which uses port 8002 by default (may be overriden by using --port={port} argument). Scripts
 
     ./start-application.sh
     ./stop-application.sh
