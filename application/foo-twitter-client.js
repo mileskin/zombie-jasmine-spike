@@ -1,5 +1,5 @@
 var express = require('express')
-var options = require(__dirname + '/support/arguments-helper').argumentsHelper.toOptions({port: 8002}, process.argv)
+var options = require('tav').set()
 var app = express.createServer()
 
 app.set('view engine', 'jade')

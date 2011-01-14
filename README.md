@@ -14,6 +14,7 @@ You will need a couple of node.js modules too:
     npm install jasmine-node
     npm install express
     npm install jade
+    npm install tav
 
 ## Specs
 
