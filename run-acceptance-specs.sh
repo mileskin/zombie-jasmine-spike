@@ -2,6 +2,6 @@
 
 echo "Starting application..."
 ./start-application.sh
-/usr/bin/env node ./run-specs.js
+/usr/bin/env node ./run-acceptance-specs.js
 echo "Stopping application..."
 ./stop-application.sh

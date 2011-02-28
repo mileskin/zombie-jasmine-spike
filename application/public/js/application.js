@@ -12,6 +12,9 @@ $.fooTwitterClient = (function($) {
             _.forEach(trends, function(t) {
               $('.trends').append('<li class="trend">' + t.name + '</li>')
             })
+          },
+          error: function(xhr) {
+            $('.feedback').text(xhr.responseText)
           }
         })
       } else {
