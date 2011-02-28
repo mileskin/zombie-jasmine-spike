@@ -4,7 +4,7 @@ var app = express.createServer()
 
 app.set('view engine', 'jade')
 app.set('view options', {layout: false})
-app.use(express.staticProvider(__dirname + '/public'))
+app.use(express.staticProvider(__dirname + '/static'))
 
 app.get('/', function(req, res){
   res.render('index')
