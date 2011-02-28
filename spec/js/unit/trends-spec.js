@@ -1,6 +1,6 @@
 describe('trends', function() {
   beforeEach(function() {
-    $.fooTwitterClient.initBehavior()
+    $.fooTwitterClient.trends.initBehavior()
   })
 
   describe('when showing', function() {

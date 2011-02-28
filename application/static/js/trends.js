@@ -1,5 +1,5 @@
-$.fooTwitterClient = (function($) {
-  function initTrendsBehavior() {
+(function(app, $) {
+  function initBehavior() {
     $('.actions .showTrends').live('click', function(event) {
       event.preventDefault()
       if ($('.trends .trend').length === 0) {
@@ -23,15 +23,11 @@ $.fooTwitterClient = (function($) {
     })
   }
 
-  function initBehavior() {
-    initTrendsBehavior()
-  }
-
-  return {
+  app.trends = {
     initBehavior: initBehavior
   }
-}(jQuery))
+})(jQuery.fooTwitterClient, jQuery)
 
 $(document).ready(function() {
-  $.fooTwitterClient.initBehavior()
+  $.fooTwitterClient.trends.initBehavior()
 })
