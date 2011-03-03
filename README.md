@@ -55,7 +55,7 @@ are using port 8003 and are ment to be used by the specs only. This enables keep
 ## TODO
 
 * Some more application features
-* css using [Less.js](http://fadeyev.net/2010/06/19/lessjs-will-obsolete-css/)
+* css using [Less.js](http://fadeyev.net/2010/06/19/lessjs-will-obsolete-css/) or [Stylus](http://tjholowaychuk.com/post/3167096936/stylus-0-4-0-released)
 
 Hope you enjoy, don't forget to [follow me on twitter](http://twitter.com/mileskin)!
 
