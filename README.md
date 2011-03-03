@@ -18,18 +18,33 @@ You will need a couple of node.js modules too:
 
 ## Specs
 
-To run the specs (every 3 seconds)
+To run the zombie acceptance specs (every 3 seconds)
 
-    watch -n 3 ./run-specs.sh
+    watch -n 3 ./run-acceptance-specs.sh
+
+To run the unit specs:
+
+Setup JSTD (once only)
+* Start JSTD server (and leave it open): `./start-jstd-server.sh`
+* Open `http://localhost:8088/` with browser and click "Capture This Browser" and leave the page open. With firefox you can debug while running the tests with firebug!
+
+and then call
+
+    ./run-unit-specs.sh
+
+There's also a neat way to run all specs:
+
+    ./run-all-specs.sh
+
+jQuery.ajax is faked during the unit tests using [jasmine-fake-ajax](https://github.com/mileskin/jasmine-fake-ajax)
 
 ## Launching the application
 
 If you are interested in manually fiddling with the application (not much to see though), you may start the server by calling
 
-    cd ./application
-    node ./foo-twitter-client.js
+    cd ./application && node ./foo-twitter-client.js --port=8082
 
-which uses port 8002 by default (may be overriden by using --port={port} argument). Scripts
+Scripts
 
     ./start-application.sh
     ./stop-application.sh
@@ -38,7 +53,6 @@ are using port 8003 and are ment to be used by the specs only. This enables keep
 
 ## TODO
 
-* Unit tests for unhappy paths and corner cases using [jasmine-node](https://github.com/mhevery/jasmine-node) and [jasmine-fake-ajax](https://github.com/mileskin/jasmine-fake-ajax)
 * Some more application features
 * css using [Less.js](http://fadeyev.net/2010/06/19/lessjs-will-obsolete-css/)
 
