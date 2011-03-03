@@ -25,6 +25,7 @@ To run the zombie acceptance specs (every 3 seconds)
 To run the unit specs:
 
 Setup JSTD (once only)
+
 * Start JSTD server (and leave it open): `./start-jstd-server.sh`
 * Open `http://localhost:8088/` with browser and click "Capture This Browser" and leave the page open. With firefox you can debug while running the tests with firebug!
 
