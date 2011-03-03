@@ -9,7 +9,7 @@ First of all, you will need [node](http://nodejs.org/) and [npm](https://github.
 
 You will need a couple of node.js modules too:
 
-    npm install zombie@0.8.6 # currently fails with newer versions
+    npm install zombie
     npm install html5
     npm install jasmine-node
     npm install express
