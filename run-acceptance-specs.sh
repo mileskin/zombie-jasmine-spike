@@ -5,3 +5,4 @@ echo "Starting application..."
 /usr/bin/env node ./run-acceptance-specs.js
 echo "Stopping application..."
 ./stop-application.sh
+echo "Done."

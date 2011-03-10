@@ -18,9 +18,13 @@ You will need a couple of node.js modules too:
 
 ## Specs
 
-To run the zombie acceptance specs (every 3 seconds)
+To run all specs with [watchr](https://github.com/mynyml/watchr) after each change to some production/test js file:
 
-    watch -n 3 ./run-acceptance-specs.sh
+    watchr specs.watchr
+
+To run the zombie acceptance specs
+
+    ./run-acceptance-specs.sh
 
 To run the unit specs:
 
