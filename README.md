@@ -1,4 +1,4 @@
-Spike project for trying out [Zombie.js](http://zombie.labnotes.org/) with [Jasmine](http://pivotal.github.com/jasmine/)
+Spike project for trying out [Zombie.js](http://zombie.labnotes.org/) with [Jasmine](https://jasmine.github.io/)
 ===================================================
 
 Finally I had a chance to try out this excellent stack!
